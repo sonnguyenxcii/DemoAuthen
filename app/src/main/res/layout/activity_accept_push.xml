@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_accept_push_large_blur" />
+
+    <ImageView
+        android:id="@+id/iv_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_accept_push_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <vn.nsn.app.ocb.view.RegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default_double"
+        android:gravity="center"
+        android:padding="@dimen/padding_default"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_peep_area"
+        app:layout_constraintBottom_toTopOf="@id/iv_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default_double"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_decline"
+            android:layout_width="@dimen/free_size"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default_double"
+            android:layout_marginEnd="@dimen/margin_default_double"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_gray"
+           />
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="@dimen/free_size"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_default_double"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_primary"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

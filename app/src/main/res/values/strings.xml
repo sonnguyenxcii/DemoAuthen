@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">OCB iOTP</string>
+    <string name="input_pincode_msg">Nhập mã PIN của bạn</string>
+    <string name="chuc_mung">Chúc mừng!</string>
+    <string name="set_pincode_success">Bạn đã cài đặt mã PIN thành công!</string>
+    <string name="incorrect">Không chính xác!</string>
+    <string name="pincode_invalid">Mã PIN của bạn không trùng khớp, vui lòng cài đặt lại</string>
+    <string name="delete">Xóa</string>
+    <string name="active_app">Kích hoạt ứng dụng</string>
+    <string name="active">Kích hoạt</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="input_code_active_app">Nhập mã kích hoạt</string>
+    <string name="input_pin_code">Nhập mã Pin của bạn</string>
+    <string name="input_pincode_policy">Vui lòng cài đặt mã PIN. Mã PIN bắt buộc 6 chữ số</string>
+    <string name="setting_pincode_success">Bạn đã cài đặt mã PIN thành công!</string>
+    <string name="next">Tiếp theo</string>
+    <string name="pincode_policy">Vì lí do bảo mật, các số trên bàn phím có thể sẽ bị thay đổi vị trí</string>
+    <string name="setting_pincode_tittle">Cài đặt mã PIN</string>
+    <string name="reinput_pincode">Nhập lại mã PIN</string>
+    <string name="reinput_pincode_message">Vui lòng điền đúng mã PIN bạn đã cài ở bước phía trước</string>
+    <string name="login_tittle">Đăng nhập hệ thống</string>
+    <string name="main_msg_2">OCB iOTP là hệ thống xác thực giao dịch bảo mật được OCB phát triển để đáp ứng tuân thủ theo quy định của Ngân hàng Nhà Nước Việt Nam. Để biết thêm chi tiết, vui lòng xem tại đây</string>
+    <string name="notif_content">Xác thực giao dịch iOTP</string>
+    <string name="transaction_id">Mã giao dịch :</string>
+    <string name="transaction_time">Thời gian giao dịch :</string>
+    <string name="transaction_information">Nội dung giao dịch</string>
+    <string name="from_account">Từ tài khoản</string>
+    <string name="to_account">Đến tài khoản</string>
+    <string name="amount">Số tiền</string>
+    <string name="approve">Xác nhận</string>
+    <string name="cancel">Bỏ qua</string>
+    <string name="otp">MÃ OTP</string>
+    <string name="input_otp_message">Quý khách vui lòng nhập mã OTP này để xác thực giao dịch</string>
+    <string name="otp_time">Mã OTP có hiệu lực trong vòng 60 giây</string>
+    <string name="complete">Hoàn tất</string>
+    <string name="main_welcome">Chào mừng đến với OCB iOTP</string>
+    <string name="main_message">Hiện tại bạn chưa có bất kỳ giao dịch nào cần xác nhận</string>
+    <string name="main_intro">OCB iOTP là hệ thống xác thực giao dịch bảo mật được OCB phát triển để đáp ứng tuân thủ theo quy định của Ngân hàng Nhà Nước Việt Nam. Để biết thêm chi tiết, vui lòng xem tại đây</string>
+    <string name="input_pincode_invalid">Mã PIN của bạn không trùng khớp. Vui lòng cài đặt lại</string>
+    <string name="transaction_approval">Xác nhận giao dịch</string>
+    <string name="file_name">ocb_iotp</string>
+    <string name="setting_label">Cài đặt phương thức đăng nhập</string>
+    <string name="biometrics">Sinh trắc học</string>
+    <string name="gps">Định vị GPS</string>
+    <string name="setting_tip">* Sinh trắc học (Vân tay/Khuôn mặt)\n
+        Khi ở chế độ MỞ/ON thì hệ thống sẽ yêu cầu bạn xác thực bằng Vân tay hoặc Khuôn mặt. Phương thức xác thực sẽ phụ thuộc vào điện thoại của bạn đang sử dụng
+        \nKhi ở chế độ TẮT/OFF thì hệ thống sẽ yêu cầu xác thực bằng Mã PIN
+        \n* Định vị GPS Khi ở chế độ MỞ/ON thì hệ thống sẽ ghi nhận vị trí bạn xác thực giao dịch. Việc này nhằm mục đích bảo vệ bạn khi thực hiện giao dịch
+        \nKhi ở chế độ TẮT/OFF thì hệ thống sẽ không ghi nhận vị trí bạn xác thực giao dịch</string>
+    <string name="setting_app">Cài đặt hệ thống</string>
+
+    <string name="app_default_soft_cert_url" translatable="false">https://auth.phuongdongbank.vn/CentagateMobileWS/webresources/auth/secure/mobile/approveSoftCert/</string>
+    <!--<string name="app_default_soft_cert_url" translatable="false">https://office.securemetric.com:446/CentagateMobileWS/webresources/auth/secure/mobile/approveSoftCert/</string>-->
+    <string name="app_default_web_service_url" translatable="false">https://auth.phuongdongbank.vn/CentagateMobileWS/webresources</string>
+    <!--<string name="app_default_web_service_url" translatable="false">https://office.securemetric.com:446/CentagateMobileWS/webresources</string>-->
+    <string name="app_default_server_verify_public_key" translatable="false">MIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQBnH7SMUUdyEsTdOHzew4XEegZnllZbeYtXgOPd4wYhrpNFrddncxUDg9JR+gE+yplRnaAlqQJ5Ca1WgBpzxTr5kwBFlqhWYSYmhfzu8ywNUBVRQC9ihTO7sJdh8uaROZCoYx1iLI3SUuZakueDqQYBHR7srm4ubU3qst/2EOJHzPcKCA=</string>
+    <string name="app_default_server_enc_public_key" translatable="false">MIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAaLQrzzS99Z3R35Er94jFDmQIO5+UbPwB86Z0o4QVh7zvx71EJziKlBQesYXpjxJs7LYwFq5UEw7wKGKhAHwxX3YAohma7+RB9ij/lDEoZ6VHzaeTcfYbAnOIFbK71pvbIeODIZZ1F2Um9m6Mql3y/lqbM8Wp+mxUfzk+BbMLnpFXtaw=</string>
+
+
+</resources>
+
+
+

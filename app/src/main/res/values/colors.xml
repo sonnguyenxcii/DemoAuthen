@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#E6ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorPreloadImage">#A6000000</color>
+    <color name="colorPrimaryTransparent">#80F0AF18</color>
+    <color name="colorPeepTutorialPeep">#ffffff</color>
+
+    <color name="colorGrayWithOpacity">#F9333333</color>
+    <color name="colorGrayBtnCancel">#9B9B9B</color>
+    <color name="colorBlackWithOpacity">#CC000000</color>
+    <color name="colorWhiteWithOpacity">#88FFFFFF</color>
+    <color name="colorWhiteGradientCenter">#55FFFFFF</color>
+    <color name="colorPopularTabText">#66FFFFFF</color>
+    <color name="colorPopularTabTextSelected">#CCFFFFFF</color>
+    <color name="colorEmptyText">#9B9B9B</color>
+    <color name="colorButtonPressed">#9B9B9B</color>
+    <color name="colorDim">#22000000</color>
+
+    <!-- #33824 - Top Page -->
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="colorWhiteTransparent">#E6ffffff</color>
+    <color name="colorUnselectedIndicator">#585454</color>
+    <!-- End of #33824 -->
+
+    <!-- #33890 - User Profile -->
+    <color name="colorHeader">@color/colorBlackWithOpacity</color>
+    <color name="blue">#2F6AC9</color>
+    <color name="holoBlueDark">@android:color/holo_blue_dark</color>
+    <color name="dividerGray">#e7dbdb</color>
+    <!-- End of #33890 -->
+
+    <!-- #34196 - Invite Friend -->
+    <color name="green">#02C702</color>
+    <color name="greenDark">#33A833</color>
+    <color name="holoGreenDark">@android:color/holo_green_dark</color>
+    <color name="grey_dark">#949494</color>
+    <!-- End of #34196 -->
+
+    <!-- #34116 - Notification Setting -->
+    <color name="colorSwitchThumbNormal">#f1f1f1</color>
+    <color name="colorSwitchForeground">#42221f1f</color>
+    <!-- End of #34196 -->
+
+    <!-- Input invitation code -->
+    <color name="bg_color_btn_invitation_code">#4279B4</color>
+    <!-- End of input invitation code -->
+
+    <!-- #34347 - Term and Other -->
+    <color name="gray">#e9e7e7</color>
+    <!-- End of #34347 -->
+
+    <!-- #34487 - Device Change -->
+    <color name="holoRed">#EA5A5A</color>
+    <color name="text_color_gray">#a6a5a5</color>
+    <color name="bgNote">#efeeee</color>
+    <color name="colorOrange">#e49717</color>
+    <!-- End of #34487 -->
+
+    <!-- reading normal -->
+    <array name="dot_colors">
+        <item>@color/colorPreloadImage</item>
+        <item>@color/colorPreloadImage</item>
+    </array>
+    <!-- End of reading normal-->
+    <color name="warning_color">#f4511e</color>
+    <color name="hint_color">#42000000</color>
+    <color name="success_color">#009688</color>
+</resources>

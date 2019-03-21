@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_longAnimTime">
+
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorPrimary" />
+            <corners android:radius="@dimen/half_margin_default" />
+            <size android:width="@dimen/size_indicator_top_page"
+                android:height="@dimen/size_indicator_top_page" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gray" />
+            <corners android:radius="@dimen/half_margin_default" />
+            <size android:width="@dimen/size_indicator_top_page"
+                android:height="@dimen/size_indicator_top_page" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_16">
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_ocb_logo_rounded" />
+
+            <vn.nsn.app.ocb.view.RegularTextView
+                android:id="@+id/tittle_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:text="@string/transaction_approval"
+                app:layout_constraintLeft_toRightOf="@id/logo1" />
+
+            <vn.nsn.app.ocb.view.RegularTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                app:layout_constraintLeft_toRightOf="@id/logo1"
+                app:layout_constraintTop_toBottomOf="@id/tittle" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <include
+        android:id="@+id/cstr_header"
+        layout="@layout/header_toolbar_iotp" />
+
+    <vn.nsn.app.ocb.view.RegularTextView
+        android:id="@+id/tv_title_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30"
+        android:gravity="center"
+        android:text="@string/main_welcome"
+        android:textColor="@color/colorOrange"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/cstr_header" />
+
+    <vn.nsn.app.ocb.view.RegularTextView
+        android:id="@+id/tv_title_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="@string/main_message"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_1" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="@dimen/margin_24"
+        android:src="@drawable/ic_main"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_2" />
+
+    <vn.nsn.app.ocb.view.RegularTextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="@string/main_intro"
+        android:textColor="@color/black"
+        android:textColorLink="@color/colorOrange"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+
+</android.support.constraint.ConstraintLayout>

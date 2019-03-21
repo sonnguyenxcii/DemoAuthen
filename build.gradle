@@ -1,0 +1,70 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.0'
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.1.0'
+        classpath 'io.fabric.tools:gradle:1.25.4'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.fabric.io/public' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    appVersionCode = 1
+    appVersionName = "1.5.0"
+    supportLibraryVersion = '27.1.1'
+    minSdkVersion = 21
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+}
+
+ext.deps = [
+        fabric             : 'com.crashlytics.sdk.android:crashlytics:2.9.5@aar',
+        appcompat          : "com.android.support:appcompat-v7:$supportLibraryVersion",
+        design             : "com.android.support:design:$supportLibraryVersion",
+        constraintLayout   : 'com.android.support.constraint:constraint-layout:1.1.2',
+        kotlinStdLib       : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+        kotlinReflect      : "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
+        anko               : "org.jetbrains.anko:anko-common:0.10.5",
+        rxAndroid          : 'io.reactivex.rxjava2:rxandroid:2.1.0',
+        rxJava             : 'io.reactivex.rxjava2:rxjava:2.2.2',
+        retrofit           : 'com.squareup.retrofit2:retrofit:2.3.0',
+        retrofitRxAdapter  : 'com.squareup.retrofit2:adapter-rxjava2:2.3.0',
+        retrofitLogging    : 'com.squareup.okhttp3:logging-interceptor:3.11.0',
+        gson               : 'com.squareup.retrofit2:converter-gson:2.4.0',
+        glide              : 'com.github.bumptech.glide:glide:4.8.0',
+        glideCompiler      : 'com.github.bumptech.glide:compiler:4.8.0',
+        butterKnife        : 'com.jakewharton:butterknife:8.8.1',
+        butterKnifeCompiler: 'com.jakewharton:butterknife-compiler:8.8.1',
+        recyclerView       : "com.android.support:recyclerview-v7:$supportLibraryVersion",
+        loopingViewPager   : 'com.asksira.android:loopingviewpager:1.1.2',
+        cardView           : 'com.android.support:cardview-v7:28.0.0',
+        fcm                : 'com.google.firebase:firebase-messaging:17.3.3',
+        billing            : 'com.android.billingclient:billing:1.2',
+        blurView           : 'com.eightbitlab:blurview:1.5.0',
+        twitterComposer    : 'com.twitter.sdk.android:tweet-composer:3.1.1',
+        dotLoader          : 'com.github.bhargavms:DotLoader:1.1.1',
+        progressIndicator  : 'com.github.antonKozyriatskyi:CircularProgressIndicator:1.2.2'
+]

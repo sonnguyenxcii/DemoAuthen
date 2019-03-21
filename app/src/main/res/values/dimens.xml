@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">10sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">10sp</dimen>
+    <dimen name="free_size">0dp</dimen>
+    <dimen name="margin_default_tutorial">16dp</dimen>
+    <dimen name="size_peep_tap_area">25dp</dimen>
+    <dimen name="text_size_peep_area">22sp</dimen>
+    <dimen name="height_peep_area">120dp</dimen>
+    <dimen name="height_list_story_padding_bottom">156dp</dimen>
+    <dimen name="margin_half_default">8dp</dimen>
+    <dimen name="margin_peep_top">3dp</dimen>
+    <dimen name="size_text_tooltip_tutorial">18sp</dimen>
+    <dimen name="divider_height_default">1dp</dimen>
+    <dimen name="header_height_default">50dp</dimen>
+    <dimen name="margin_default_double">20dp</dimen>
+    <dimen name="margin_default">10dp</dimen>
+    <dimen name="half_margin_default">5dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="padding_default">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="half_padding_default">5dp</dimen>
+    <dimen name="radius_default">4dp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_normal">12sp</dimen>
+    <dimen name="progress_height_default">4dp</dimen>
+    <dimen name="segment_width_default">120dp</dimen>
+    <dimen name="badge_width">60dp</dimen>
+    <dimen name="badge_height">30dp</dimen>
+    <dimen name="dialog_corner_radius">10dp</dimen>
+
+    <!-- #33824 - Top Page -->
+    <dimen name="size_indicator_top_page">8dp</dimen>
+    <dimen name="padding_top_page_48">48dp</dimen>
+    <dimen name="height_carousel_top_page">170dp</dimen>
+    <dimen name="height_story_top_page">200dp</dimen>
+    <dimen name="width_story_top_page">150dp</dimen>
+    <dimen name="width_border_badge">1dp</dimen>
+    <dimen name="radius_badge">16dp</dimen>
+    <dimen name="radius_progress_bar">16dp</dimen>
+    <dimen name="text_size_header_story">16sp</dimen>
+    <dimen name="text_size_tiny">10sp</dimen>
+    <dimen name="text_size_toolbar_tittle">17sp</dimen>
+    <!-- End of #33824 -->
+
+    <dimen name="margin_tutorial_profile_32">32dp</dimen>
+    <dimen name="text_size_tutorial_profile_header1">17sp</dimen>
+    <dimen name="text_size_tutorial_profile_header_2">15sp</dimen>
+    <dimen name="margin_tutorial_profile_space_content">40dp</dimen>
+    <dimen name="text_size_peep_header">23sp</dimen>
+    <dimen name="width_none_dp">0dp</dimen>
+    <dimen name="text_size_default">14sp</dimen>
+    <!-- End of #33824 -->
+
+
+    <!-- #33980 - Account Profile -->
+    <dimen name="size_icon_tiny">12dp</dimen>
+    <dimen name="size_icon_normal">30dp</dimen>
+    <dimen name="size_avatar">60dp</dimen>
+    <dimen name="size_avatar_large">140dp</dimen>
+    <dimen name="min_height_spinner">30dp</dimen>
+    <dimen name="margin_tutorial_profile_half">16dp</dimen>
+    <dimen name="padding_notification_setting_default">16dp</dimen>
+    <dimen name="margin_notification_setting_header_space">48dp</dimen>
+    <!-- End of #33980 -->
+
+    <!-- #34196 - Invite friend -->
+    <dimen name="width_profile_header_shadow">2dp</dimen>
+    <!-- End of #34196 -->
+
+    <!--PURCHASE-->
+    <dimen name="purchase_button_width">300dp</dimen>
+    <dimen name="purchase_product_price_button_width">100dp</dimen>
+    <dimen name="purchase_product_price_button_height">25dp</dimen>
+    <dimen name="purchase_indicator_size">15dp</dimen>
+    <!--PURCHASE-->
+
+    <!-- Chapter -->
+    <dimen name="margin_chapter_14">14dp</dimen>
+    <dimen name="margin_chapter_28">28dp</dimen>
+    <dimen name="height_chapter_item">108dp</dimen>
+    <dimen name="size_current_chapter">17dp</dimen>
+
+    <dimen name="story_photo_chapter_list_width">81dp</dimen>
+    <dimen name="story_photo_chapter_list_height">108dp</dimen>
+    <dimen name="view_break_line">0.5dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <!-- End of chapters -->
+
+    <!-- Input invitation code -->
+    <dimen name="btn_input_code_height">46dp</dimen>
+    <dimen name="text_size_btn_input_code">17sp</dimen>
+    <!-- End input invitation code -->
+
+    <!-- #34487 - Device Change -->
+    <dimen name="min_width_dialog">300dp</dimen>
+    <!-- End of #34487 -->
+
+    <!--READING-->
+    <dimen name="margin_reading_story_title">30dp</dimen>
+    <!--READING-->
+
+    <!-- #34626 - Login Bonus -->
+    <dimen name="size_continuous_days_large">10dp</dimen>
+    <dimen name="size_continuous_days_small">6dp</dimen>
+    <dimen name="size_reading_dot">3dp</dimen>
+    <!-- End of #34626 -->
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_default"
+    android:background="@drawable/bg_btn_gray_transparent_corner_radius"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_default_tutorial"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/tv_body"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_half_default"
+        android:text="@string/app_name" />
+
+</LinearLayout>

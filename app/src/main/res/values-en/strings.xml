@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OCB iOTP</string>
+    <string name="setting_pincode_tittle">Set PIN Code</string>
+    <string name="input_pincode_policy">Please, set your PIN Code. The PIN Code must be 6 digits</string>
+    <string name="input_pin_code">Enter your PIN Code</string>
+    <string name="next">Continue</string>
+    <string name="pincode_policy">For security reasons, the numpad layout is randomized</string>
+    <string name="delete">CLEAR</string>
+    <string name="reinput_pincode">Confirm your PIN Code</string>
+    <string name="reinput_pincode_message">Please, re-enter the same PIN Code that you have entered in previous step</string>
+    <string name="set_pincode_success">You have set PIN Code successfully</string>
+    <string name="chuc_mung">Congratulation!</string>
+    <string name="incorrect">Failed!</string>
+    <string name="pincode_invalid">Your PINs do not match. Please, try again</string>
+    <string name="username">Username</string>
+    <string name="input_code_active_app">Enter Activation Code</string>
+    <string name="setting_pincode_success">You have activated your account successfully</string>
+    <string name="active">Active</string>
+    <string name="active_app">Active App</string>
+    <string name="input_pincode_msg">Please, enter your PIN Code</string>
+    <string name="login_tittle">Login</string>
+    <string name="main_msg_2">"OCB iOTP was built by OCB for secure your transaction based on the Policy of The State Bank of Viet Nam. For more information, Please click here"</string>
+    <string name="notif_content">Transaction approval needed</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="transaction_time">Transaction Time</string>
+    <string name="input_pincode_invalid">Your PINs do not match. Please, try again</string>
+    <string name="transaction_approval">Transaction Approval</string>
+    <string name="transaction_information">Transaction Information</string>
+    <string name="from_account">From Account</string>
+    <string name="to_account">To Account</string>
+    <string name="amount">Amount</string>
+    <string name="approve">Approve</string>
+    <string name="cancel">Cancel</string>
+    <string name="otp">OTP</string>
+    <string name="input_otp_message">Please, enter this OTP at Verification transaction step on Internet Banking/ Mobile Banking</string>
+    <string name="otp_time">The OTP is available in 60 seconds</string>
+    <string name="complete">Complete</string>
+    <string name="main_welcome">Welcome to OCB iOTP</string>
+    <string name="main_message">You don’t have any transaction need to verify.</string>
+    <string name="main_intro">OCB iOTP was built by OCB for secure your transaction based on the Policy of The State Bank of Viet Nam   For more information, Please click here</string>
+    <string name="file_name">ocb_iotp</string>
+    <string name="setting_label">Setting authorization methods</string>
+    <string name="biometrics">Biometrics</string>
+    <string name="gps">GPS Location</string>
+    <string name="setting_tip">* Biometrics:
+        \nWhen you turn ON, system will allow you to login application by Fingerprint or Face Regconization (It depends on your mobile device)
+        \nWhen you turn OFF, system will set default login method as PIN Code
+        \n* GPS Location: When you turn ON, system will record your location when you submit transaction. It will protect you and easy to check with the bank when you have any issue
+        \nWhen you turn OFF, System does not record your location when you submit transaction</string>
+    <string name="setting_app">System Settings</string>
+</resources>

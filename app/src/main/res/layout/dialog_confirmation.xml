@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDim"
+    android:gravity="center">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="@dimen/purchase_button_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_white_rounded"
+        android:clickable="true"
+        android:focusable="true">
+
+        <vn.nsn.app.ocb.view.BoldTextView
+            android:id="@+id/lbl_title"
+            android:layout_width="@dimen/free_size"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_white_rounded_top"
+            android:gravity="center_horizontal"
+            android:paddingStart="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_15"
+            android:paddingEnd="@dimen/padding_15"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_header_story"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <vn.nsn.app.ocb.view.RegularTextView
+            android:id="@+id/lbl_message"
+            android:layout_width="@dimen/free_size"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_white_rounded_top"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_15"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_header_story"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_title" />
+
+        <View
+            android:id="@+id/vw_hor"
+            android:layout_width="@dimen/free_size"
+            android:layout_height="@dimen/divider_height_default"
+            android:background="@color/dividerGray"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_message" />
+
+        <LinearLayout
+            android:layout_width="@dimen/free_size"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_hor">
+
+            <vn.nsn.app.ocb.view.BoldTextView
+                android:id="@+id/lbl_cancel"
+                style="@style/Button"
+                android:layout_width="@dimen/free_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color_gray"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/divider_vertical"
+                android:layout_width="@dimen/divider_height_default"
+                android:layout_height="match_parent"
+                android:background="@color/dividerGray"
+                android:visibility="gone" />
+
+            <vn.nsn.app.ocb.view.BoldTextView
+                android:id="@+id/lbl_ok"
+                style="@style/Button"
+                android:layout_width="@dimen/free_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

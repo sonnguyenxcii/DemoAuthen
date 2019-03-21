@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_story_cover_gradient" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_tutorial"
+        android:layout_marginTop="@dimen/margin_default"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_back_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default_tutorial"
+        android:src="@drawable/button_fav_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fr_pull_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/header_height_default"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_pullclose" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_tutorial"
+        android:layout_marginEnd="@dimen/margin_default_tutorial"
+        android:minHeight="@dimen/header_height_default"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/fr_pull_down" />
+
+    <TextView
+        android:id="@+id/tv_peep_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_tutorial"
+        android:layout_marginBottom="@dimen/margin_default_double"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_tutorial"
+        android:layout_marginBottom="@dimen/margin_default_tutorial"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_peep_num" />
+
+    <TextView
+        android:id="@+id/tv_story_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_tutorial"
+        android:layout_marginBottom="@dimen/margin_reading_story_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_tutorial_profile_header1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_author" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default_tutorial"
+        android:layout_marginBottom="@dimen/margin_default_tutorial"
+        app:layout_constraintBottom_toTopOf="@+id/tv_story_name">
+
+        <TextView
+            android:id="@+id/tv_genre"
+            style="@style/TagFlame"
+            android:background="@drawable/bg_badge_update" />
+
+        <TextView
+            android:id="@+id/tv_update_day"
+            style="@style/TagFlame"
+            android:layout_marginStart="@dimen/margin_default"
+            android:background="@drawable/bg_badge_wday" />
+
+        <TextView
+            android:id="@+id/tv_chapter_num"
+            style="@style/TagFlame"
+            android:layout_marginStart="@dimen/margin_default"
+            android:background="@drawable/bg_badge_chapters" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/TagFlame"
+            android:layout_marginStart="@dimen/margin_default"
+            android:background="@drawable/bg_badge_chapters"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,1 @@
+include ':app', ':centagateSDK', ':pass-v1.2.6', ':sdk-v1.0.0', ':centagate-release', ':commons-codec-1.11'

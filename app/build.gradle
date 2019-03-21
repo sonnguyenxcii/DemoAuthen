@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'io.fabric'
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "vn.nsn.ocb"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.appVersionCode
+        versionName rootProject.ext.appVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        defaultConfig {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            applicationIdSuffix ".dev"
+            signingConfig signingConfigs.defaultConfig
+            buildConfigField "String", "SERVER_URL", ServerUrlTest
+        }
+        staging {
+            minifyEnabled false
+            applicationIdSuffix ".staging"
+            signingConfig signingConfigs.defaultConfig
+            buildConfigField "String", "SERVER_URL", ServerUrlStaging
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.defaultConfig
+            buildConfigField "String", "SERVER_URL", ServerUrl
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation deps.kotlinStdLib
+    implementation deps.kotlinReflect
+    implementation(deps.fabric) {
+        transitive = true
+    }
+    implementation deps.anko
+    implementation deps.appcompat
+    implementation deps.design
+    implementation deps.constraintLayout
+    implementation deps.rxAndroid
+    implementation deps.rxJava
+    implementation deps.retrofit
+    implementation deps.retrofitLogging
+    implementation deps.retrofitRxAdapter
+    implementation deps.gson
+    implementation deps.glide
+    implementation deps.recyclerView
+    annotationProcessor deps.glideCompiler
+    implementation deps.butterKnife
+    kapt deps.butterKnifeCompiler
+    implementation deps.loopingViewPager
+    implementation deps.cardView
+    implementation deps.fcm
+//    implementation deps.billing
+//    implementation deps.blurView
+//    implementation deps.twitterComposer
+    implementation deps.dotLoader
+    implementation deps.progressIndicator
+    implementation 'com.google.android.gms:play-services-gcm:16.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':centagate-release')
+    implementation files('libs/pass-v1.2.6.jar')
+//    implementation project(':commons-codec-1.11')
+    implementation project(':sdk-v1.0.0')
+//    implementation project(':commons-codec-1.11')
+    implementation 'commons-codec:commons-codec:1.10'
+    implementation 'com.github.HenriqueMachine:EasyFingerPrint:1.0.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    // Check for v11.4.2 or higher
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+
+    // Add dependency
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.7'
+}
+
+apply plugin: 'com.google.gms.google-services'

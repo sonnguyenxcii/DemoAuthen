@@ -1,0 +1,258 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorDim</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorDim</item>-->
+        <!--<item name="colorAccent">@color/colorDim</item>-->
+
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Setting" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.FullScreen" parent="AppTheme.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.TransparentStatusBar" parent="AppTheme.NoActionBar">
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorDim</item>
+    </style>
+
+    <style name="Tranlucent" parent="AppTheme.NoActionBar.TransparentStatusBar">
+        <!--<item name="android:windowBackground">@color/colorWhiteTransparent</item>-->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="LoadingView">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:maxWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+    </style>
+
+    <style name="StoryTextSmall">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:paddingStart">@dimen/margin_default</item>
+        <item name="android:paddingEnd">@dimen/margin_default</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="StoryTextNormal">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:paddingStart">@dimen/margin_default</item>
+        <item name="android:paddingEnd">@dimen/margin_default</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="StoryBadge">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:paddingStart">@dimen/half_margin_default</item>
+        <item name="android:paddingEnd">@dimen/half_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">@dimen/badge_width</item>
+        <item name="android:layout_height">@dimen/badge_height</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="StoryProgress" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_height">@dimen/progress_height_default</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/half_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/half_margin_default</item>
+        <item name="android:layout_marginStart">@dimen/margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default</item>
+        <item name="android:progressDrawable">@drawable/bg_story_progress</item>
+        <item name="android:max">100</item>
+    </style>
+
+    <style name="SegmentRadioButtonStart" parent="@style/Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/margin_default</item>
+        <item name="android:layout_width">@dimen/segment_width_default</item>
+        <item name="android:background">@drawable/bg_segment_start</item>
+        <item name="android:textColor">@color/segment_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SegmentRadioButtonEnd" parent="@style/Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/margin_default</item>
+        <item name="android:layout_width">@dimen/segment_width_default</item>
+        <item name="android:background">@drawable/bg_segment_end</item>
+        <item name="android:textColor">@color/segment_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="Button" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/text_size_default</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingStart">@dimen/padding_default</item>
+        <item name="android:paddingEnd">@dimen/padding_default</item>
+        <item name="android:paddingTop">@dimen/padding_15</item>
+        <item name="android:paddingBottom">@dimen/padding_15</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Button.Blue">
+        <item name="android:background">@drawable/btn_pressed_blue</item>
+    </style>
+
+    <style name="Button.HoloBlueDarkRadiusSmall">
+        <item name="android:background">@drawable/btn_pressed_holo_blue_dark_radius_small</item>
+    </style>
+
+    <style name="Button.GreyDarkRadiusSmall">
+        <item name="android:background">@drawable/btn_pressed_grey_dark_radius_small</item>
+    </style>
+
+    <style name="Button.GreenRadiusSmall">
+        <item name="android:background">@drawable/btn_pressed_green_radius_small</item>
+    </style>
+
+    <style name="Button.HoloGreenDark">
+        <item name="android:background">@drawable/btn_pressed_holo_green_dark</item>
+    </style>
+
+    <style name="Button.White">
+        <item name="android:background">@drawable/btn_pressed_white</item>
+    </style>
+    <!-- End of button -->
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorSwitchThumbNormal
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/colorSwitchForeground
+        </item>
+    </style>
+
+    <!-- Tagflame styles -->
+    <style name="TagFlame">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding_15</item>
+        <item name="android:paddingEnd">@dimen/padding_15</item>
+        <item name="android:paddingTop">@dimen/half_padding_default</item>
+        <item name="android:paddingBottom">@dimen/half_padding_default</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="PadNum">
+        <item name="android:layout_width">@dimen/free_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingTop">@dimen/margin_16</item>
+        <item name="android:paddingBottom">@dimen/margin_16</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="circlePinView">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:background">@drawable/bg_pin_inactive</item>
+
+    </style>
+
+    <style name="layoutActiveCode">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="textViewActiveCode">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/greenDark</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textViewOtpAdvance">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="textViewOtpAdvanceNew">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+
+    </style>
+
+    <style name="textViewValueOtpAdvance">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="textViewValueOtpAdvanceNew">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">6</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="underlineActiveCode">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/gray</item>
+
+    </style>
+
+
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>
