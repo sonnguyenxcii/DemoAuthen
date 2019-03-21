@@ -10,14 +10,14 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_peep_gray" />
 
-    <vn.nsn.app.ocb.view.BoldTextView
+    <vn.nsn.app.iotp.view.BoldTextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/margin_default"
         android:textColor="@color/colorEmptyText" />
 
-    <vn.nsn.app.ocb.view.RegularTextView
+    <vn.nsn.app.iotp.view.RegularTextView
         android:id="@+id/tv_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

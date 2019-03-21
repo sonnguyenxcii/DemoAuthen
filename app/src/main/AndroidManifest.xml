@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="vn.nsn.app.ocb">
+    package="vn.nsn.app.iotp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -27,31 +27,31 @@
         android:protectionLevel="signature" />
     <uses-permission android:name="com.something.app.permission.C2D_MESSAGE" />
     <application
-        android:name="vn.nsn.app.ocb.PeepApp"
+        android:name="vn.nsn.app.iotp.PeepApp"
         android:allowBackup="true"
-        android:icon="@drawable/ic_ocb_logo_rounded"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_ocb_logo_rounded"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="vn.nsn.app.ocb.screen.splash.SplashActivity"
+            android:name="vn.nsn.app.iotp.screen.splash.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.FullScreen">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="vn.nsn.app.ocb.screen.home.HomeActivity"
+            android:name="vn.nsn.app.iotp.screen.home.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.TransparentStatusBar" />
 
         <activity
-            android:name="vn.nsn.app.ocb.screen.tutorialprofile.TutorialProfileActivity"
+            android:name="vn.nsn.app.iotp.screen.tutorialprofile.TutorialProfileActivity"
             android:theme="@style/Tranlucent" />
 
         <activity
@@ -62,7 +62,7 @@
 
         </activity>
         <activity
-            android:name="vn.nsn.app.ocb.screen.transaction.TransactionDetailActivity"
+            android:name="vn.nsn.app.iotp.screen.transaction.TransactionDetailActivity"
             android:screenOrientation="portrait"
 
             android:theme="@style/AppTheme.NoActionBar.TransparentStatusBar" />
@@ -90,8 +90,8 @@
 
             android:theme="@style/AppTheme.NoActionBar.TransparentStatusBar">
             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
         <activity
@@ -103,11 +103,16 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.TransparentStatusBar" />
 
-        <service android:name="vn.nsn.app.ocb.push.PeepFirebaseMessagingService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
+        <activity android:name=".screen.LoginFragment2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.TransparentStatusBar"
+            />
+
+        <!--<service android:name="vn.nsn.app.ocb.push.PeepFirebaseMessagingService">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
 
         <meta-data
             android:name="io.fabric.ApiKey"
@@ -145,7 +150,7 @@
         </receiver>
 
         <service
-            android:name=".util.MyIntentService"
+            android:name="vn.nsn.app.iotp.util.MyIntentService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />

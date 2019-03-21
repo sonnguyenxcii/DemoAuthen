@@ -4,17 +4,16 @@
     xmlns:card_view="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:animateLayoutChanges="true"
-    android:background="@color/white"
+    android:background="@color/black"
     android:fitsSystemWindows="true">
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/header_toolbar_language"
+        layout="@layout/header_toolbar"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <vn.nsn.app.ocb.view.RegularTextView
+    <vn.nsn.app.iotp.view.RegularTextView
         android:id="@+id/tv_lbl2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,6 +22,7 @@
         android:text="@string/input_pincode_msg"
         android:textColor="@color/black"
         android:textSize="18sp"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@id/ln_pincode" />
 
     <LinearLayout
@@ -82,7 +82,7 @@
                 android:layout_height="40dp"
                 android:src="@drawable/ic_check_correct" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/tv_success"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -93,13 +93,13 @@
                 android:textStyle="bold"
                 app:layout_constraintLeft_toRightOf="@id/img_success" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/tv_success_msg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_8"
                 android:layout_marginTop="@dimen/margin_8"
-                android:text="@string/set_pincode_success"
+                android:text="@string/login_success"
                 android:textColor="@color/white"
                 app:layout_constraintLeft_toRightOf="@id/img_success"
                 app:layout_constraintTop_toBottomOf="@id/tv_success" />
@@ -139,7 +139,7 @@
                 android:layout_height="40dp"
                 android:src="@drawable/ic_check_error" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/tv_fail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -150,13 +150,13 @@
                 android:textStyle="bold"
                 app:layout_constraintLeft_toRightOf="@id/img_fail" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/tv_fail_msg"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_8"
                 android:layout_marginTop="@dimen/margin_8"
-                android:text="@string/pincode_invalid"
+                android:text="@string/login_failed"
                 android:textColor="@color/white"
                 app:layout_constraintLeft_toRightOf="@id/img_fail"
                 app:layout_constraintRight_toLeftOf="@id/img_close_fail"
@@ -173,7 +173,7 @@
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 
-    <vn.nsn.app.ocb.view.RegularTextView
+    <vn.nsn.app.iotp.view.RegularTextView
 
         android:id="@+id/tv_lbl3"
         android:layout_width="match_parent"
@@ -185,90 +185,115 @@
         android:text="@string/pincode_policy"
         android:textColor="#0e0e0e"
         android:textSize="12sp"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@id/num" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:text="SecureMetric Technology"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <LinearLayout
         android:id="@+id/num"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:layout_marginBottom="@dimen/margin_30"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toTopOf="@id/label">
 
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_1"
                 style="@style/PadNum"
-                android:text="1" />
+                android:text="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/num_2" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_2"
-
                 style="@style/PadNum"
-                android:text="2" />
+                android:text="2"
+                app:layout_constraintLeft_toRightOf="@id/num_1"
+                app:layout_constraintRight_toLeftOf="@id/num_3" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_3"
-
                 style="@style/PadNum"
-                android:text="3" />
-        </LinearLayout>
+                android:text="3"
+                app:layout_constraintLeft_toRightOf="@id/num_2"
+                app:layout_constraintRight_toRightOf="parent" />
+        </android.support.constraint.ConstraintLayout>
 
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_4"
-
                 style="@style/PadNum"
-                android:text="4" />
+                android:text="4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/num_5" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_5"
-
                 style="@style/PadNum"
+                android:text="5"
+                app:layout_constraintLeft_toRightOf="@id/num_4"
 
-                android:text="5" />
+                app:layout_constraintRight_toLeftOf="@id/num_6" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_6"
                 style="@style/PadNum"
+                android:text="6"
+                app:layout_constraintLeft_toRightOf="@id/num_5"
+                app:layout_constraintRight_toRightOf="parent" />
+        </android.support.constraint.ConstraintLayout>
 
-                android:text="6" />
-        </LinearLayout>
-
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_7"
-
                 style="@style/PadNum"
-                android:text="7" />
+                android:text="7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/num_8" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_8"
-
                 style="@style/PadNum"
-                android:text="8" />
+                android:text="8"
+                app:layout_constraintLeft_toRightOf="@id/num_7"
+                app:layout_constraintRight_toLeftOf="@id/num_9" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_9"
                 style="@style/PadNum"
+                android:text="9"
+                app:layout_constraintLeft_toRightOf="@id/num_8"
+                app:layout_constraintRight_toRightOf="parent" />
+        </android.support.constraint.ConstraintLayout>
 
-                android:text="9" />
-        </LinearLayout>
-
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_delete"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -276,24 +301,45 @@
                 android:background="?attr/selectableItemBackground"
                 android:gravity="center"
                 android:tag="@string/delete"
-                android:text="@string/delete"
+                android:text="RESET"
                 android:textAllCaps="true"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/num_0"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_0"
                 style="@style/PadNum"
-                android:text="0" />
+                android:text="0"
+                app:layout_constraintLeft_toRightOf="@id/num_delete"
+                app:layout_constraintRight_toLeftOf="@id/num_back" />
 
-            <ImageView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/num_back"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="?attr/selectableItemBackground"
-                android:padding="@dimen/margin_16"
-                android:src="@drawable/ic_backspace" />
-        </LinearLayout>
+                android:gravity="center"
+                android:tag="@string/delete"
+                android:text="DELETE"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/num_0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--<ImageView-->
+            <!--android:id="@+id/num_back"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="@dimen/margin_16"-->
+            <!--android:src="@drawable/ic_close_white" />-->
+        </android.support.constraint.ConstraintLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

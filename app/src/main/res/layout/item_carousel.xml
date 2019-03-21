@@ -28,7 +28,7 @@
             app:layout_constraintStart_toStartOf="@+id/img_carousel"
             app:layout_constraintTop_toTopOf="@+id/img_carousel" />
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/lbl_title"
             android:layout_width="@dimen/free_size"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/lbl_chapter"
             android:layout_width="@dimen/free_size"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
             app:layout_constraintEnd_toEndOf="@+id/lbl_title"
             app:layout_constraintStart_toStartOf="@+id/lbl_title" />
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/lbl_genre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/lbl_title" />
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/lbl_peep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

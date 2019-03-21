@@ -4,14 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <vn.nsn.app.ocb.view.TextViewRegular
+    <vn.nsn.app.iotp.view.TextViewRegular
         android:id="@+id/tv_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
         android:textSize="@dimen/text_size_small" />
 
-    <vn.nsn.app.ocb.view.TextViewRegular
+    <vn.nsn.app.iotp.view.TextViewRegular
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -9,7 +9,7 @@
         android:id="@+id/toolbar"
         layout="@layout/header_toolbar" />
 
-    <vn.nsn.app.ocb.view.RegularTextView
+    <vn.nsn.app.iotp.view.RegularTextView
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/biometrics"
@@ -56,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/gps"
@@ -65,7 +65,7 @@
 
     </android.support.constraint.ConstraintLayout>
 
-    <vn.nsn.app.ocb.view.RegularTextView
+    <vn.nsn.app.iotp.view.RegularTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/margin_16"

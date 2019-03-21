@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:ignore="MissingDefaultResource">
 
-    <vn.nsn.app.ocb.view.VerticalViewPager
+    <vn.nsn.app.iotp.view.VerticalViewPager
         android:id="@+id/vp_tutorial_story"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

@@ -38,7 +38,7 @@
             app:layout_constraintStart_toStartOf="@+id/img_background"
             app:layout_constraintTop_toBottomOf="@+id/view_break_line" />
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/tv_chapter_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
             app:layout_constraintTop_toBottomOf="@+id/img_current_chapter" />
 
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/tv_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

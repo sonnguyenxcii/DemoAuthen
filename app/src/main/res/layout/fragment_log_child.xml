@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:clipToPadding="false" />
 
-    <vn.nsn.app.ocb.view.EmptyView
+    <vn.nsn.app.iotp.view.EmptyView
         android:id="@+id/v_empty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <vn.nsn.app.ocb.view.loading.LoadingView
+    <vn.nsn.app.iotp.view.loading.LoadingView
         android:id="@+id/v_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

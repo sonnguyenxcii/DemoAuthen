@@ -39,7 +39,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </FrameLayout>
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/tv_tittle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/tv_vn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
                 android:layout_marginBottom="@dimen/margin_8"
                 android:background="@color/black" />
 
-            <vn.nsn.app.ocb.view.RegularTextView
+            <vn.nsn.app.iotp.view.RegularTextView
                 android:id="@+id/tv_en"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

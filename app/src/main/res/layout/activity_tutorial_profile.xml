@@ -194,7 +194,7 @@
             android:textSize="@dimen/text_size_tutorial_profile_header1" />
     </LinearLayout>
 
-    <vn.nsn.app.ocb.view.loading.LoadingView
+    <vn.nsn.app.iotp.view.loading.LoadingView
         android:id="@+id/v_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

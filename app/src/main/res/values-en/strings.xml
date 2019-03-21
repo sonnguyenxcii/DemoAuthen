@@ -34,7 +34,7 @@
     <string name="cancel">Cancel</string>
     <string name="otp">OTP</string>
     <string name="input_otp_message">Please, enter this OTP at Verification transaction step on Internet Banking/ Mobile Banking</string>
-    <string name="otp_time">The OTP is available in 60 seconds</string>
+    <string name="otp_time">The OTP is available in 120 seconds</string>
     <string name="complete">Complete</string>
     <string name="main_welcome">Welcome to OCB iOTP</string>
     <string name="main_message">You don’t have any transaction need to verify.</string>
@@ -49,4 +49,12 @@
         \n* GPS Location: When you turn ON, system will record your location when you submit transaction. It will protect you and easy to check with the bank when you have any issue
         \nWhen you turn OFF, System does not record your location when you submit transaction</string>
     <string name="setting_app">System Settings</string>
+    <string name="time_expired">Time has expired</string>
+    <string name="lock_5_min">Your application will be locked within 5 minutes because you tried enter incorrect PIN 3 times.</string>
+    <string name="locked">Your account has locked on OCB iOTP. Please go to OCB Branches or call at 18006678 for help</string>
+    <string name="active_message_failed">Invalid activation information. Please try again</string>
+    <string name="login_failed">You have entered incorrect PIN code. Please try again</string>
+    <string name="login_success">You logged in successfully</string>
+    <string name="app_verify">Application verification</string>
+    <string name="error_undefine">Error undefined</string>
 </resources>

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white">
 
     <include
@@ -36,7 +37,7 @@
                 android:layout_marginBottom="16dp"
                 android:orientation="vertical">
 
-                <vn.nsn.app.ocb.view.RegularTextView
+                <vn.nsn.app.iotp.view.RegularTextView
                     android:id="@+id/tv_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -53,17 +54,17 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="@dimen/margin_16">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/tv_trans_id"
                         style="@style/textViewOtpAdvance"
-                        android:text="@string/transaction_id"
+                        tools:text="@string/transaction_id"
                         android:textColor="@color/black" />
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/tv_trans_id_value"
 
                         style="@style/textViewValueOtpAdvance"
-                        android:text="876453235"
+                        tools:text="876453235"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -75,18 +76,18 @@
                     android:layout_marginEnd="@dimen/margin_16"
                     app:layout_constraintTop_toBottomOf="@id/tv_title">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/tv_from_account"
                         style="@style/textViewOtpAdvance"
-                        android:text="@string/from_account"
+                        tools:text="@string/from_account"
 
                         android:textColor="@color/black" />
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
 
                         android:id="@+id/tv_from_account_value"
                         style="@style/textViewValueOtpAdvance"
-                        android:text="8764532345667775"
+                        tools:text="8764532345667775"
 
                         android:textColor="@color/black"
                         android:textStyle="bold" />
@@ -100,18 +101,18 @@
                     android:layout_marginRight="@dimen/margin_16"
                     app:layout_constraintTop_toBottomOf="@id/tv_title">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/tv_to_account"
                         style="@style/textViewOtpAdvance"
 
-                        android:text="@string/to_account"
+                        tools:text="@string/to_account"
                         android:textColor="@color/black" />
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/tv_to_account_value"
 
                         style="@style/textViewValueOtpAdvance"
-                        android:text="8764532333432545"
+                        tools:text="8764532333432545"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -121,30 +122,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:visibility="gone"
                     android:layout_marginEnd="@dimen/margin_16"
                     app:layout_constraintTop_toBottomOf="@id/tv_title">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/tv_money"
                         style="@style/textViewOtpAdvance"
 
-                        android:text="@string/amount"
+                        tools:text="@string/amount"
                         android:textColor="@color/black" />
 
                     <LinearLayout
 
                         style="@style/textViewValueOtpAdvance">
 
-                        <vn.nsn.app.ocb.view.RegularTextView
+                        <vn.nsn.app.iotp.view.RegularTextView
                             android:id="@+id/tv_money_value"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="50.000.000"
+                            tools:text="50.000.000"
                             android:textColor="@color/colorOrange"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
-                        <vn.nsn.app.ocb.view.RegularTextView
+                        <vn.nsn.app.iotp.view.RegularTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -156,23 +158,24 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ln_time"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="@dimen/margin_16"
-                    android:visibility="gone"
+                    android:visibility="visible"
                     app:layout_constraintTop_toBottomOf="@id/tv_title">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/tv_time"
                         style="@style/textViewOtpAdvance"
-                        android:text="@string/transaction_time"
+                        tools:text="@string/transaction_time"
                         android:textColor="@color/black" />
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/tv_time_value"
                         style="@style/textViewValueOtpAdvance"
-                        android:text="17/11/2018 - 09:12:20"
+                        tools:text="17/11/2018 - 09:12:20"
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -195,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_16">
 
-                <vn.nsn.app.ocb.view.RegularTextView
+                <vn.nsn.app.iotp.view.RegularTextView
                     android:id="@+id/tv_otp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -216,7 +219,7 @@
                     android:background="@color/greenDark"
                     app:layout_constraintTop_toBottomOf="@id/tv_otp" />
 
-                <vn.nsn.app.ocb.view.RegularTextView
+                <vn.nsn.app.iotp.view.RegularTextView
                     android:id="@+id/tv_message"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -246,6 +249,7 @@
                         android:background="@color/transparent"
                         android:cursorVisible="false"
                         android:enabled="false"
+                        android:focusable="false"
                         android:inputType="number"
                         android:maxLength="6"
                         android:maxLines="1"
@@ -256,7 +260,7 @@
 
                 </android.support.constraint.ConstraintLayout>
 
-                <vn.nsn.app.ocb.view.RegularTextView
+                <vn.nsn.app.iotp.view.RegularTextView
                     android:id="@+id/tv_message_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -285,7 +289,7 @@
     </android.support.constraint.ConstraintLayout>
 
 
-    <vn.nsn.app.ocb.view.RegularTextView
+    <vn.nsn.app.iotp.view.RegularTextView
         android:id="@+id/tv_ok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

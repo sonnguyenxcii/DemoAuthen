@@ -55,5 +55,11 @@
         </Field5>
     </EN>
 </Root>
-
+<!--<Root><VN>-->
+    <!--<Field1><Caption>Mã giao dịch</Caption><Data>NIB-TAU4243021112185e409600af4fc291</Data></Field1>-->
+    <!--<Field2><Caption>Thời gian giao dịch</Caption><Data>11/12/2018 08:43:41</Data></Field2>-->
+    <!--<Field3><Caption></Caption><Data></Data></Field3>-->
+    <!--<Field4><Caption></Caption><Data></Data></Field4>-->
+    <!--<Field5><Caption></Caption><Data></Data></Field5>-->
+    <!--<Field6><Caption></Caption><Data></Data></Field6></VN><EN><Field1><Caption>Transaction ID</Caption><Data>NIB-TAU4243021112185e409600af4fc291</Data><Color></Color></Field1><Field2><Caption>Transaction Time</Caption><Data>11/12/2018 08:43:41</Data><Color></Color></Field2><Field3><Caption></Caption><Data></Data><Color></Color></Field3><Field4><Caption></Caption><Data></Data><Color></Color></Field4><Field5><Caption></Caption><Data></Data><Color></Color></Field5><Field6><Caption></Caption><Data></Data><Color></Color></Field6></EN></Root>-->
 <!--<Root><VN><Field1><Caption>Mã giao dịch :</Caption><Data>876453235</Data><Color>e49717</Color></Field1><Field2><Caption>Từ tài khoản</Caption><Data>8764532345667775</Data><Color>F9333333</Color></Field2><Field3><Caption>Đến tài khoản</Caption><Data>8764532333432545</Data><Color>F9333333</Color></Field3><Field4><Caption>Số tiền</Caption><Data>50.000.000</Data><Color>e49717</Color></Field4><Field5><Caption>Thời gian giao dịch :</Caption><Data>30/12/2018 - 09:12:20</Data><Color>F9333333</Color></Field5></VN><EN><Field1><Caption>Transaction ID</Caption><Data>876453235</Data><Color>e49717</Color></Field1><Field2><Caption>From Account</Caption><Data>8764532345667775</Data><Color>F9333333</Color></Field2><Field3><Caption>To Account</Caption><Data>8764532333432545</Data><Color>F9333333</Color></Field3><Field4><Caption>Amount</Caption><Data>50.000.000</Data><Color>e49717</Color></Field4><Field5><Caption>Transaction Time :</Caption><Data>30/12/2018 - 09:12:20</Data><Color>F9333333</Color></Field5></EN></Root>-->

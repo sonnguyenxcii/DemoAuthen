@@ -33,7 +33,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <vn.nsn.app.ocb.view.RegularTextView
+                <vn.nsn.app.iotp.view.RegularTextView
                     android:id="@+id/lbl_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                     app:layout_constraintStart_toEndOf="@+id/img_avatar"
                     app:layout_constraintTop_toTopOf="@+id/img_avatar" />
 
-                <vn.nsn.app.ocb.view.RegularTextView
+                <vn.nsn.app.iotp.view.RegularTextView
                     android:id="@+id/label_update_to_get_peep"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                     app:layout_constraintBaseline_toBaselineOf="@+id/lbl_update"
                     app:layout_constraintStart_toStartOf="@+id/img_avatar" />
 
-                <vn.nsn.app.ocb.view.RegularTextView
+                <vn.nsn.app.iotp.view.RegularTextView
                     android:id="@+id/lbl_update"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_top">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_invite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/margin_default"
@@ -140,7 +140,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_invite">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_buy_peep"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_buy">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_purchase_history"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -222,7 +222,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_purchase_history">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_push_notification"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -263,7 +263,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_push_notification">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_user_code"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -304,7 +304,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_user_code">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_change_device"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -345,7 +345,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_change_device">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_enter_invite_id"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -386,7 +386,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_enter_invite_id">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_renew"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -427,7 +427,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_renew">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_term"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -468,7 +468,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/hor_term">
 
-                    <vn.nsn.app.ocb.view.RegularTextView
+                    <vn.nsn.app.iotp.view.RegularTextView
                         android:id="@+id/label_reset_info"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

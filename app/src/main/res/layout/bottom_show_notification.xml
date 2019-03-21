@@ -19,7 +19,7 @@
             android:layout_height="16dp"
             android:src="@drawable/ic_ocb_logo_rounded" />
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/tittle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:text="@string/transaction_approval"
             app:layout_constraintLeft_toRightOf="@id/logo" />
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

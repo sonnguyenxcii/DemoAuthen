@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/tv_lbl1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/tv_lbl1" />
 
-        <vn.nsn.app.ocb.view.RegularTextView
+        <vn.nsn.app.iotp.view.RegularTextView
             android:id="@+id/tv_lbl3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
 
     </android.support.constraint.ConstraintLayout>
 
-    <vn.nsn.app.ocb.view.RegularTextView
+    <vn.nsn.app.iotp.view.RegularTextView
         android:id="@+id/btn_active"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

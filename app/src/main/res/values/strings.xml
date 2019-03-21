@@ -31,7 +31,7 @@
     <string name="cancel">Bỏ qua</string>
     <string name="otp">MÃ OTP</string>
     <string name="input_otp_message">Quý khách vui lòng nhập mã OTP này để xác thực giao dịch</string>
-    <string name="otp_time">Mã OTP có hiệu lực trong vòng 60 giây</string>
+    <string name="otp_time">Mã OTP có hiệu lực trong vòng 120 giây</string>
     <string name="complete">Hoàn tất</string>
     <string name="main_welcome">Chào mừng đến với OCB iOTP</string>
     <string name="main_message">Hiện tại bạn chưa có bất kỳ giao dịch nào cần xác nhận</string>
@@ -49,12 +49,22 @@
         \nKhi ở chế độ TẮT/OFF thì hệ thống sẽ không ghi nhận vị trí bạn xác thực giao dịch</string>
     <string name="setting_app">Cài đặt hệ thống</string>
 
-    <string name="app_default_soft_cert_url" translatable="false">https://auth.phuongdongbank.vn/CentagateMobileWS/webresources/auth/secure/mobile/approveSoftCert/</string>
+    <string name="app_default_soft_cert_url" translatable="false">https://iotp.ocb.com.vn/CentagateMobileWS/webresources/auth/secure/mobile/approveSoftCert/</string>
+    <!--<string name="app_default_soft_cert_url" translatable="false">https://auth.phuongdongbank.vn/CentagateMobileWS/webresources/auth/secure/mobile/approveSoftCert/</string>-->
     <!--<string name="app_default_soft_cert_url" translatable="false">https://office.securemetric.com:446/CentagateMobileWS/webresources/auth/secure/mobile/approveSoftCert/</string>-->
-    <string name="app_default_web_service_url" translatable="false">https://auth.phuongdongbank.vn/CentagateMobileWS/webresources</string>
+    <string name="app_default_web_service_url" translatable="false">https://iotp.ocb.com.vn/CentagateMobileWS/webresources</string>
+    <!--<string name="app_default_web_service_url" translatable="false">https://auth.phuongdongbank.vn/CentagateMobileWS/webresources</string>-->
     <!--<string name="app_default_web_service_url" translatable="false">https://office.securemetric.com:446/CentagateMobileWS/webresources</string>-->
     <string name="app_default_server_verify_public_key" translatable="false">MIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQBnH7SMUUdyEsTdOHzew4XEegZnllZbeYtXgOPd4wYhrpNFrddncxUDg9JR+gE+yplRnaAlqQJ5Ca1WgBpzxTr5kwBFlqhWYSYmhfzu8ywNUBVRQC9ihTO7sJdh8uaROZCoYx1iLI3SUuZakueDqQYBHR7srm4ubU3qst/2EOJHzPcKCA=</string>
     <string name="app_default_server_enc_public_key" translatable="false">MIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAaLQrzzS99Z3R35Er94jFDmQIO5+UbPwB86Z0o4QVh7zvx71EJziKlBQesYXpjxJs7LYwFq5UEw7wKGKhAHwxX3YAohma7+RB9ij/lDEoZ6VHzaeTcfYbAnOIFbK71pvbIeODIZZ1F2Um9m6Mql3y/lqbM8Wp+mxUfzk+BbMLnpFXtaw=</string>
+    <string name="time_expired">Hết thời gian giao dịch</string>
+    <string name="error_undefine">Lỗi không xác định</string>
+    <string name="lock_5_min">Ứng dụng của Quý khách sẽ bị khóa trong 5 phút. Lý do: Quý khách nhập mã PIN sai 3 lần</string>
+    <string name="locked">Tài khoản của Quý Khách trên OCB iOTP đã bị khóa. Quý Khách vui lòng tới chi nhánh OCB gần nhất hoặc gọi 18006678 để được hỗ trợ.</string>
+    <string name="active_message_failed">Thông tin kích hoạt không hợp lệ. Quý khách vui lòng thử lại</string>
+    <string name="login_failed">Bạn đăng nhập sai Mã PIN</string>
+    <string name="login_success">Bạn đã đăng nhập thành công</string>
+    <string name="app_verify">Xác thực hệ thống</string>
 
 
 </resources>

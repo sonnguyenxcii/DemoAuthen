@@ -15,7 +15,7 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "vn.nsn.ocb"
+        applicationId "com.ocb.iotp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.appVersionCode
@@ -80,7 +80,7 @@ dependencies {
     kapt deps.butterKnifeCompiler
     implementation deps.loopingViewPager
     implementation deps.cardView
-    implementation deps.fcm
+//    implementation deps.fcm
 //    implementation deps.billing
 //    implementation deps.blurView
 //    implementation deps.twitterComposer
@@ -93,16 +93,16 @@ dependencies {
     implementation project(':centagate-release')
     implementation files('libs/pass-v1.2.6.jar')
 //    implementation project(':commons-codec-1.11')
-    implementation project(':sdk-v1.0.0')
+//    implementation project(':sdk-v1.0.0')
 //    implementation project(':commons-codec-1.11')
     implementation 'commons-codec:commons-codec:1.10'
     implementation 'com.github.HenriqueMachine:EasyFingerPrint:1.0.1'
     implementation 'org.greenrobot:eventbus:3.1.1'
     // Check for v11.4.2 or higher
-    implementation 'com.google.firebase:firebase-core:16.0.6'
+//    implementation 'com.google.firebase:firebase-core:16.0.6'
 
     // Add dependency
     implementation 'com.crashlytics.sdk.android:crashlytics:2.9.7'
 }
 
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
