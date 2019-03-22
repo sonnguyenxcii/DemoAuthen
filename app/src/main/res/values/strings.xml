@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OCB iOTP</string>
+    <string name="app_name" translatable="false">Centagate Demo</string>
     <string name="input_pincode_msg">Nhập mã PIN của bạn</string>
     <string name="chuc_mung">Chúc mừng!</string>
     <string name="set_pincode_success">Bạn đã cài đặt mã PIN thành công!</string>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">OCB iOTP</string>
     <string name="setting_pincode_tittle">Set PIN Code</string>
     <string name="input_pincode_policy">Please, set your PIN Code. The PIN Code must be 6 digits</string>
     <string name="input_pin_code">Enter your PIN Code</string>

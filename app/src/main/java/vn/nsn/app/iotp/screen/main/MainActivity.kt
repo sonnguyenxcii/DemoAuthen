@@ -14,6 +14,7 @@ import android.text.TextUtils
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.RemoteViews
 import butterknife.BindView
@@ -27,6 +28,7 @@ import vn.nsn.app.iotp.mvp.MvpActivity
 import vn.nsn.app.iotp.screen.authen.pincode.CreatePinCodeContract
 import vn.nsn.app.iotp.screen.authen.pincode.CreatePinCodePresenter
 import vn.nsn.app.iotp.screen.authen.setting.SettingActivity
+import vn.nsn.app.iotp.screen.qrcode.QrCodeScannerActivity
 import vn.nsn.app.iotp.screen.transaction.TransactionDetailActivity
 import vn.nsn.app.iotp.util.LanguageUtils
 import vn.nsn.app.iotp.view.RegularTextView
@@ -34,23 +36,23 @@ import vn.nsn.app.iotp.view.RegularTextView
 
 class MainActivity : MvpActivity<CreatePinCodePresenter>(), CreatePinCodeContract {
 
-    @BindView(R.id.tv_message)
-    lateinit var tvMessage: RegularTextView
-
-    @BindView(R.id.tv_vn)
-    lateinit var tvVn: RegularTextView
-
-    @BindView(R.id.tv_en)
-    lateinit var tvEn: RegularTextView
-
-    @BindView(R.id.img_setting)
-    lateinit var imgSetting: ImageView
-
+//    @BindView(R.id.tv_message)
+//    lateinit var tvMessage: RegularTextView
+//
+//    @BindView(R.id.tv_vn)
+//    lateinit var tvVn: RegularTextView
+//
+//    @BindView(R.id.tv_en)
+//    lateinit var tvEn: RegularTextView
+//
+//    @BindView(R.id.img_setting)
+//    lateinit var imgSetting: ImageView
+//
     @BindView(R.id.sheet)
     lateinit var sheet: View
-
-    @BindView(R.id.name)
-    lateinit var tittlePush: RegularTextView
+//
+    @BindView(R.id.conduct)
+    lateinit var conduct: Button
 
     override fun initPresenter() {
     }
@@ -64,58 +66,6 @@ class MainActivity : MvpActivity<CreatePinCodePresenter>(), CreatePinCodeContrac
 
     lateinit var languageUtils: LanguageUtils
 
-
-    @OnClick(R.id.tv_vn)
-    fun OnVnClick() {
-        changeLang("vi")
-
-    }
-
-    @OnClick(R.id.tv_en)
-    fun OnEnClick() {
-        changeLang("en")
-
-    }
-
-    fun loadLang() {
-        val lang = languageUtils.loadLocale(this)
-        if (lang.equals("vi")) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                tvVn.textColor = getColor(R.color.black)
-                tvEn.textColor = getColor(R.color.gray)
-
-            } else {
-                tvVn.textColor = resources.getColor(R.color.black)
-                tvEn.textColor = resources.getColor(R.color.gray)
-
-            }
-        } else {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                tvVn.textColor = getColor(R.color.gray)
-                tvEn.textColor = getColor(R.color.black)
-
-            } else {
-                tvVn.textColor = resources.getColor(R.color.gray)
-                tvEn.textColor = resources.getColor(R.color.black)
-
-            }
-        }
-    }
-
-    fun changeLang(type: String) {
-
-        if (type == "vi") {
-            languageUtils.changeLang("vi", this)
-        } else {
-            languageUtils.changeLang("en", this)
-
-        }
-
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
-
     override fun initLocale() {
         languageUtils = LanguageUtils(this)
         val lang = languageUtils.loadLocale(this)
@@ -125,42 +75,9 @@ class MainActivity : MvpActivity<CreatePinCodePresenter>(), CreatePinCodeContrac
 
     override fun setupViews() {
 
-        loadLang()
-        val ss = SpannableString(getString(R.string.main_msg_2))
-
-        val clickableSpan = object : ClickableSpan() {
-            override fun onClick(widget: View?) {
-//                makeNotification()
-
-            }
-
-        }
-
-        val lang = languageUtils.loadLocale(this)
-
-        if (lang == "vi") {
-            ss.setSpan(clickableSpan, ss.length - 7, ss.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-
-        } else {
-            ss.setSpan(clickableSpan, ss.length - 10, ss.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-
-        }
-
-        tvMessage.text = ss
-        tvMessage.movementMethod = LinkMovementMethod.getInstance()
-        tvMessage.highlightColor = Color.TRANSPARENT
-
-        imgSetting.setOnClickListener {
-            val intent = Intent(this, SettingActivity::class.java)
-            startActivity(intent)
-        }
 
     }
 
-    @OnClick(R.id.logo)
-    fun onClick() {
-//        showNotification()
-    }
 
     fun makeNotification() {
         val remoteViews = RemoteViews(packageName, R.layout.activity_custom_notification)
@@ -228,8 +145,8 @@ class MainActivity : MvpActivity<CreatePinCodePresenter>(), CreatePinCodeContrac
 
     private fun showNotification() {
         sheet.visibility = View.VISIBLE
-        tittlePush.text = preferenceHelper.getName()
-
+//        tittlePush.text = preferenceHelper.getName()
+//
         sheet.setOnClickListener {
             val intent = Intent(this, TransactionDetailActivity::class.java)
             startActivity(intent)
@@ -257,5 +174,11 @@ class MainActivity : MvpActivity<CreatePinCodePresenter>(), CreatePinCodeContrac
     public override fun onStop() {
         super.onStop()
         EventBus.getDefault().unregister(this)
+    }
+
+    @OnClick(R.id.conduct)
+     fun onConductClick() {
+        val intent = Intent(this, QrCodeScannerActivity::class.java)
+            startActivity(intent)
     }
 }

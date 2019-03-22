@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">OCB iOTP</string>
     <string name="input_pincode_msg">Nhập mã PIN của bạn</string>
     <string name="chuc_mung">Chúc mừng!</string>
     <string name="set_pincode_success">Bạn đã cài đặt mã PIN thành công!</string>

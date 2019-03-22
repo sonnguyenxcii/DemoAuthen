@@ -23,6 +23,7 @@ import io.reactivex.subjects.PublishSubject
 import vn.nsn.app.iotp.R
 import vn.nsn.app.iotp.mvp.MvpActivity
 import vn.nsn.app.iotp.screen.LoginActivity
+import vn.nsn.app.iotp.screen.main.MainActivity
 import vn.nsn.app.iotp.screen.selectlanguage.SelectLanguageActivity
 import vn.nsn.app.iotp.util.showRetryDialog
 import java.io.ByteArrayInputStream
@@ -65,7 +66,7 @@ class SplashActivity : MvpActivity<SplashPresenterContract>(), SplashViewContrac
     }
 
     fun startCount() {
-        compositeDisposable.add(showPeepSubject.debounce(1000, TimeUnit.MILLISECONDS)
+        compositeDisposable.add(showPeepSubject.debounce(2000, TimeUnit.MILLISECONDS)
                 .observeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe {
@@ -257,33 +258,14 @@ class SplashActivity : MvpActivity<SplashPresenterContract>(), SplashViewContrac
     override fun gotoNext() {
 
         if (TextUtils.isEmpty(preferenceHelper.getPincode())) {
-            val intent = Intent(this, SelectLanguageActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         } else {
-//            val timeFail = preferenceHelper.getPincodeFail()
-//            if (timeFail < 8) {
-//                if (timeFail < 5) {
+
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
-//                } else {
-//                    val lastTime = preferenceHelper.getPincodeFailLastTime()
-//                    val current = System.currentTimeMillis()
-//                    val diffTime = current - lastTime
-//                    if (diffTime > 300000) {
-//                        val intent = Intent(this, LoginActivity::class.java)
-//                        startActivity(intent)
-//                        finish()
-//                    } else {
-//                        Toast.makeText(this, "Tài khoản tạm khóa", Toast.LENGTH_SHORT).show()
-//                    }
-//                }
-//
-//            } else {
-//                Toast.makeText(this, "Tài khoản của quý khách trên OCB iOTP đã bị khóa", Toast.LENGTH_SHORT).show()
-//
-//            }
 
         }
 

@@ -77,8 +77,8 @@ class CreatePinCodeActivity : MvpActivity<CreatePinCodePresenter>(), CreatePinCo
     @BindView(R.id.num_delete)
     lateinit var numDelete: RegularTextView
 
-    @BindView(R.id.tv_tittle)
-    lateinit var tvTittle: RegularTextView
+//    @BindView(R.id.tv_tittle)
+//    lateinit var tvTittle: RegularTextView
 
     @BindView(R.id.tv_next)
     lateinit var tvNext: RegularTextView
@@ -121,7 +121,7 @@ class CreatePinCodeActivity : MvpActivity<CreatePinCodePresenter>(), CreatePinCo
 
     override fun initViews() {
 
-        tvTittle.text = getString(R.string.setting_pincode_tittle)
+//        tvTittle.text = getString(R.string.setting_pincode_tittle)
 
         initKeyPad()
 
@@ -303,7 +303,7 @@ class CreatePinCodeActivity : MvpActivity<CreatePinCodePresenter>(), CreatePinCo
 
     fun onNextClick() {
         if (count == 0) {
-            tvTittle.text = getString(R.string.reinput_pincode)
+//            tvTittle.text = getString(R.string.reinput_pincode)
             tvLbl.text = getString(R.string.reinput_pincode_message)
 
             for (i in 1..5) {
@@ -373,13 +373,8 @@ class CreatePinCodeActivity : MvpActivity<CreatePinCodePresenter>(), CreatePinCo
         onNextClick()
     }
 
-    @OnClick(R.id.img_btn_back)
-    fun onBtnBackClick() {
-        finish()
-    }
-
     private fun reset() {
-        tvTittle.text = getString(R.string.setting_pincode_tittle)
+//        tvTittle.text = getString(R.string.setting_pincode_tittle)
         tvLbl.text = getString(R.string.input_pincode_policy)
         initKeyPad()
         count = 0

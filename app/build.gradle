@@ -34,18 +34,18 @@ android {
         debug {
             minifyEnabled false
             applicationIdSuffix ".dev"
-            signingConfig signingConfigs.defaultConfig
+//            signingConfig signingConfigs.defaultConfig
             buildConfigField "String", "SERVER_URL", ServerUrlTest
         }
         staging {
             minifyEnabled false
             applicationIdSuffix ".staging"
-            signingConfig signingConfigs.defaultConfig
+//            signingConfig signingConfigs.defaultConfig
             buildConfigField "String", "SERVER_URL", ServerUrlStaging
         }
         release {
             minifyEnabled false
-            signingConfig signingConfigs.defaultConfig
+//            signingConfig signingConfigs.defaultConfig
             buildConfigField "String", "SERVER_URL", ServerUrl
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -103,6 +103,8 @@ dependencies {
 
     // Add dependency
     implementation 'com.crashlytics.sdk.android:crashlytics:2.9.7'
+
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
 }
 
 //apply plugin: 'com.google.gms.google-services'
